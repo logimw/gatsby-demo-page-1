@@ -1,10 +1,12 @@
 import React from "react";
 import Layout from "../components/Layout/Layout";
 
-export default function Home() {
+const TagsPage = () => {
   return (
     <Layout>
-      <div>Hello world!</div>
+      <h1>tags page</h1>
     </Layout>
   );
-}
+};
+
+export default TagsPage;
