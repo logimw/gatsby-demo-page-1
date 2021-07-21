@@ -27,7 +27,7 @@ const NavBar = () => {
             home
           </Link>
           <Link
-            to="/Recipes"
+            to="/recipes"
             className="nav-link"
             activeClassName="active-link"
             onClick={() => setShow(false)}
@@ -35,7 +35,7 @@ const NavBar = () => {
             recipes
           </Link>
           <Link
-            to="/About"
+            to="/about"
             className="nav-link"
             activeClassName="active-link"
             onClick={() => setShow(false)}
@@ -43,7 +43,7 @@ const NavBar = () => {
             about us
           </Link>
           <Link
-            to="/Tags"
+            to="/tags"
             className="nav-link"
             activeClassName="active-link"
             onClick={() => setShow(false)}
@@ -51,7 +51,7 @@ const NavBar = () => {
             tags
           </Link>
           <div
-            to="/Contact"
+            to="/contact"
             className="nav-link contact-link"
             activeClassName="active-link"
           >
