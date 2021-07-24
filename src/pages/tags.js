@@ -17,7 +17,7 @@ const TagsPage = ({ data }) => {
             const [text, value] = tag;
             const tagSlug = slugify(text, { lower: true });
             return (
-              <Link to={`tags/${tagSlug}`} className="tag">
+              <Link to={`/tags/${tagSlug}`} className="tag">
                 <h5>{text}</h5>
                 <p>{value > 1 ? `${value} recipes` : `${value} recipe`} </p>
               </Link>
