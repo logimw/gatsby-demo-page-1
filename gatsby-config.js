@@ -19,6 +19,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-webfonts`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -31,6 +32,23 @@ module.exports = {
       options: {
         spaceId: `p3ay1ywnufcv`,
         accessToken: process.env.CONTENTFUL_API_KEY,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Montserrat",
+              variants: ["300", "400", "500"],
+            },
+            {
+              family: "Inconsolata",
+              variants: ["400", "500", "600", "700"],
+            },
+          ],
+        },
       },
     },
   ],
